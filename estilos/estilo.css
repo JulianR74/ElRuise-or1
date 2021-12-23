@@ -1,0 +1,929 @@
+/*Variales*/
+/*Datos*/
+/*Colores*/
+/*Medidas*/
+/*Normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Nav*/
+.header_nav {
+  background-color: #F73734;
+  width: 100%;
+  position: relative;
+}
+
+.header_nav .logo {
+  text-align: center;
+}
+
+.header_nav .logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: ease-in;
+  transition: ease-in;
+}
+
+.header_nav .bg-light {
+  background-color: #F73734 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container-fluidd {
+  width: 95%;
+  padding-left: 30px;
+}
+
+.navbar-expand-lg, .navbar-collapse {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #F0F9FF !important;
+}
+
+.zona1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.zona_index {
+  background: url(../Imagenes/FondoNav/yorkshire-terrier-3136405_1920.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+header.abajo {
+  background: #F73734;
+}
+
+.header_nav_index {
+  background: transparent;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 1.0s;
+  transition: 1.0s;
+}
+
+.bg-light_index {
+  background-color: transparent !important;
+}
+
+/*FinNav*/
+/*Footer*/
+.footer-dark {
+  padding: 50px 0;
+  color: #fff;
+  background-color: #F73734;
+  width: 100%;
+}
+
+.footer-dark .row .servicios {
+  padding-left: 50px;
+}
+
+.footer-dark .h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-dark ul a {
+  color: white;
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer-dark ul a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom: 36px;
+}
+
+.footer-dark p {
+  margin-bottom: 0;
+}
+
+.footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+.footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-dark .row .servicios {
+    padding-left: 0px;
+  }
+}
+
+/*FinFooter*/
+/*Pagina Index*/
+/**Slider**/
+.boton_banner_catpro {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_catpro a:hover {
+  color: white;
+}
+
+/**Destacados-MasVendidos**/
+.contenedorDestacadosIndex {
+  background-color: white;
+}
+
+.Destacados {
+  margin: auto;
+  display: table;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Destacados h1 {
+  float: left;
+  color: #2D3E50;
+  position: relative;
+}
+
+.Destacados .spanDestacados {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: white;
+  border-left: 1px solid black;
+  -webkit-animation: spanDestacados 5s infinite alternate steps(20);
+          animation: spanDestacados 5s infinite alternate steps(20);
+}
+
+.Destacados .spanNovedades {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: white;
+  border-left: 1px solid black;
+  -webkit-animation: spanNovedades 3s infinite alternate steps(9);
+          animation: spanNovedades 3s infinite alternate steps(9);
+}
+
+@-webkit-keyframes spanDestacados {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes spanDestacados {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes spanNovedades {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes spanNovedades {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.contenedor_productos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boton_banner_catpro {
+  text-decoration: none;
+  color: black;
+}
+
+.boton_banner_catpro :hover {
+  color: black;
+}
+
+.boton_banner_catpro a {
+  text-decoration: none;
+  color: black;
+}
+
+.boton_banner_catpro a :hover {
+  text-decoration: none;
+  color: black;
+}
+
+.boton_banner_dogchow {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_dogchow a {
+  text-decoration: none;
+  color: black;
+}
+
+.boton_banner_dogchow a :hover {
+  text-decoration: none;
+  color: black;
+}
+
+.boton_banner_eukanuba {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_eukanuba :hover {
+  color: white;
+}
+
+.boton_banner_eukanuba a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.boton_banner_eukanuba a :hover {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_proplan {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_proplan :hover {
+  color: white;
+}
+
+.boton_banner_proplan a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.boton_banner_proplan a :hover {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_royalcanin {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_royalcanin :hover {
+  color: white;
+}
+
+.boton_banner_royalcanin a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.boton_banner_royalcanin a :hover {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_sieger {
+  text-decoration: none;
+  color: white;
+}
+
+.boton_banner_sieger :hover {
+  color: white;
+}
+
+.boton_banner_sieger a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.boton_banner_sieger a :hover {
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor_productos .mainProductos {
+  width: 300px;
+  height: 300px;
+  margin-left: 3%;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.contenedor_productos .mainProductos img {
+  height: 270px;
+}
+
+.contenedor_productos .mainProductos a {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background: #2D3E50;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mainProductos:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 599px) {
+  .contenedor_productos .mainProductos {
+    margin-left: 0%;
+  }
+}
+
+#productoPerro {
+  background-image: url(../Imagenes/Fondoproductos/fondoperro.png);
+}
+
+#productoGato {
+  background-image: url(../Imagenes/Fondoproductos/fondogatos.png);
+}
+
+/**Fin Destacados**/
+/**BotonFlotante**/
+#btn-mas {
+  display: none;
+}
+
+.container_boton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.redes a, .btn-mas label {
+  display: block;
+  text-decoration: none;
+  background: #cc2b2b;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.redes a:hover {
+  background: #fff;
+  color: #cc2b2b;
+}
+
+.redes a {
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-mas:checked ~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-mas label {
+  cursor: pointer;
+  background: #f44141;
+  font-size: 23px;
+}
+
+#btn-mas:checked ~ .btn-mas label {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  font-size: 25px;
+}
+
+/*Pagina Contactanos*/
+.contactForm {
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+.contactForm input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F73734;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.contactoForm textarea {
+  background-color: #fbfbfb;
+  width: 450px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F73734;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+#mensaje {
+  width: 408px;
+  height: 150px;
+}
+
+.contactForm label {
+  display: block;
+  float: center;
+}
+
+.contactForm button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #F73734;
+  border-color: #F73734;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+.contactForm button p {
+  color: #fff;
+}
+
+.contactForm span {
+  color: #F73734;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+.contactForm h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #F73734;
+}
+
+.contactoForm h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
+}
+
+.contactForm p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #4b2727;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #4b2727;
+}
+
+@media screen and (max-width: 462px) {
+  .contactForm {
+    width: 380px;
+  }
+  .contactForm h1 {
+    font-size: 25px;
+  }
+  .contactForm h3 {
+    font-size: 12px;
+  }
+  .contactForm input {
+    width: 320px;
+  }
+  .contactForm #mensaje {
+    width: 320px;
+  }
+  .contactForm button {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .contactForm {
+    width: 360px;
+  }
+  .contactForm h1 {
+    font-size: 22px;
+  }
+  .contactForm h3 {
+    font-size: 10px;
+  }
+  .contactForm input {
+    width: 300px;
+  }
+  .contactForm #mensaje {
+    width: 300px;
+  }
+  .contactForm button {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .contactForm {
+    width: 320px;
+  }
+  .contactForm h1 {
+    font-size: 20px;
+  }
+  .contactForm h3 {
+    font-size: 8px;
+  }
+  .contactForm input {
+    width: 260px;
+  }
+  .contactForm #mensaje {
+    width: 260px;
+  }
+  .contactForm button {
+    width: 260px;
+  }
+}
+
+/*FinPaginaContactanos*/
+/*CATALOGO*/
+.wrap > h1 {
+  color: #494B4D;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.wrap > h1:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #F0F9FF;
+  margin: 20px 0;
+}
+
+.store-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.category_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 18%;
+}
+
+.category_list .category_item {
+  display: block;
+  width: 90%;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background: #F73734;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.category_list .ct_item-active {
+  background: #2D3E50;
+}
+
+/* PRODUCTOS ============*/
+.products_list {
+  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.products_list .product_item {
+  width: 250px;
+  height: 250px;
+  margin-left: 3%;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.product_perro {
+  background-image: url(../Imagenes/Fondoproductos/fondoperro.png);
+}
+
+.product_gato {
+  background-image: url(../Imagenes/Fondoproductos/fondogatos.png);
+}
+
+.product_hamster {
+  background-image: url(../Imagenes/Fondoproductos/fondohamster.png);
+}
+
+.product_peces {
+  background-image: url(../Imagenes/Fondoproductos/fondopeces.png);
+}
+
+.product_aves {
+  background-image: url(../Imagenes/Fondoproductos/fondoaves.png);
+}
+
+.product_medicamentos {
+  background-image: url(../Imagenes/Fondoproductos/fondofarmacia.png);
+  background-size: cover;
+}
+
+.products_list .product_item img {
+  height: 220px;
+}
+
+.products_list .product_item .a_articulo {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  background: #2D3E50;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* RESPONSIVE ================================*/
+@media screen and (max-width: 1100px) {
+  .products_list .product_item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .category_list,
+  .products_list {
+    width: 100%;
+  }
+  .category_list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .category_list .category_item {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 15%;
+    font-size: 14px;
+  }
+  /*.products_list-perro .product_item-perro{
+		margin-left: 4.5%;
+	}*/
+  /*.products_list-perro .product_item-perro:nth-child(3n+1){
+		margin-left: 0px;
+	}*/
+}
+
+@media screen and (max-width: 700px) {
+  .category_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .category_list .category_item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .products_list .product_item {
+    width: 95%;
+  }
+  /*.products_list-perro .product_item-perro:nth-child(3n+1){
+		margin-left: 4.5%;
+	}*/
+}
+
+@media screen and (max-width: 350px) {
+  .products_list .product_item {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+.modal-header {
+  background-color: white;
+}
+
+.modal-title {
+  color: #2D3E50;
+}
+
+.btn-secondary {
+  color: white;
+  background: #2D3E50;
+}
+
+.modal-body {
+  text-align: center;
+  /*background: url(../Imagenes/Fondoproductos/fondoperro.png);*/
+}
+
+.modal-body img {
+  height: 420px;
+}
+
+.modal-footer {
+  background-color: white;
+}
+
+@media (max-width: 426px) {
+  .modal-body img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 325px) {
+  .modal-body img {
+    height: 270px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

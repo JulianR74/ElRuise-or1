@@ -1,0 +1,192 @@
+.contactForm{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+.contactForm input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #F73734; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+.contactoForm textarea{
+  background-color: #fbfbfb; 
+  width: 450px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #F73734; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+#mensaje {
+  width: 408px;
+  height: 150px;
+}
+
+
+.contactForm label{
+  display: block; 
+  float: center;  
+}
+
+
+.contactForm button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #F73734; 
+  border-color: #F73734; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;
+  cursor: pointer;
+}
+
+
+.contactForm button p{
+  color: #fff; 
+}
+
+
+.contactForm span{
+  color: #F73734; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+.contactForm h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #F73734;
+}
+
+
+.contactoForm h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+.contactForm p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid rgb(75, 39, 39);
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid rgb(75, 39, 39);
+}
+
+
+@media screen and (max-width: 462px){
+	.contactForm{
+    width: 380px;
+		h1 {
+      font-size: 25px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+    input {
+      width: 320px;
+    }
+    #mensaje {
+      width: 320px;
+    }
+    button {
+      width: 320px;
+    }
+	}
+	
+}
+
+@media screen and (max-width: 381px){
+	.contactForm{
+    width: 360px;
+		h1 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 10px;
+    }
+    input {
+      width: 300px;
+    }
+    #mensaje {
+      width: 300px;
+    }
+    button {
+      width: 300px;
+    }
+	}
+	
+}
+
+@media screen and (max-width: 361px){
+	.contactForm{
+    width: 320px;
+		h1 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 8px;
+    }
+    input {
+      width: 260px;
+    }
+    #mensaje {
+      width: 260px;
+    }
+    button {
+      width: 260px;
+    }
+	}
+	
+}

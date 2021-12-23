@@ -1,0 +1,219 @@
+.contenedorDestacadosIndex {
+    background-color: white;
+  }
+
+
+  .Destacados {
+    margin: auto;
+    display: table;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h1 {
+      float: left;
+      color:#2D3E50;
+      position: relative;
+    }
+    
+    .spanDestacados {
+      position: absolute;
+      right: 0;
+      width: 0;
+      background-color: white;
+      border-left: 1px solid black;
+
+      animation: spanDestacados 5s infinite alternate steps(20);
+    }
+
+    .spanNovedades {
+      position: absolute;
+      right: 0;
+      width: 0;
+      background-color: white;
+      border-left: 1px solid black;
+
+      animation: spanNovedades 3s infinite alternate steps(9);
+    }
+  }
+  
+  @keyframes spanDestacados {
+    from {
+      width: 100%;
+    }
+
+    to {
+      width: 0;
+    }
+  }
+
+  @keyframes spanNovedades {
+    from {
+      width: 100%;
+    }
+
+    to {
+      width: 0;
+    }
+  }
+
+  .contenedor_productos{
+    width: 100%;
+	  display: flex;
+	  flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .boton_banner_catpro {
+    text-decoration: none;
+    color: black;
+    :hover {
+      color: black;
+    }
+
+      a {
+        text-decoration: none;
+        color: black;
+        :hover {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+    .boton_banner_dogchow {
+      text-decoration: none;
+      color: white;
+        a {
+          text-decoration: none;
+          color: black;
+          :hover {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+
+    .boton_banner_eukanuba {
+      text-decoration: none;
+      color: white;
+        :hover {
+          color: white;
+        }
+    
+        a {
+          text-decoration: none;
+          color: wheat;
+          :hover {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+
+      .boton_banner_proplan {
+        text-decoration: none;
+        color: white;
+          :hover {
+            color: white;
+          }
+      
+          a {
+            text-decoration: none;
+            color: wheat;
+            :hover {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+
+      .boton_banner_royalcanin {
+        text-decoration: none;
+        color: white;
+          :hover {
+            color: white;
+          }
+        
+          a {
+            text-decoration: none;
+            color: wheat;
+            :hover {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+
+      .boton_banner_sieger {
+        text-decoration: none;
+        color: white;
+          :hover {
+            color: white;
+            }
+          
+          a {
+            text-decoration: none;
+            color: wheat;
+            :hover {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+
+     
+  
+
+     
+  
+  .contenedor_productos .mainProductos{
+    width: 300px;
+    height: 300px;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    
+    transition: all .4s;
+  }
+  
+  .contenedor_productos .mainProductos img{
+    height: 270px;
+  }
+  
+  .contenedor_productos .mainProductos a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #2D3E50;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mainProductos:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+  }
+  
+  
+  
+
+  @media (max-width: 599px) {
+    .contenedor_productos .mainProductos {
+      margin-left: 0%;
+    }
+  }
+
+
+  #productoPerro {
+    background-image: url(../Imagenes/Fondoproductos/fondoperro.png);
+  }
+
+  #productoGato {
+    background-image: url(../Imagenes/Fondoproductos/fondogatos.png);
+  }
